@@ -683,13 +683,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>
         .with_env_filter("yes_rs=trace")
         .init();
 
-    info!("🚀 Starting the most BLAZINGLY FAST yes command ever written 🚀");
+    info!("🚀 Starting the most 🚀🔥BLAZINGLY FAST🔥🚀 yes command ever written 🚀");
     info!("💬 As a Rust developer, I'd like to mention this is memory safe");
     info!("🦀 Did I mention this is written in Rust? It's written in Rust BTW");
     info!("⚡ Initializing zero-cost abstractions (that definitely don't cost zero)");
     info!("🔥 Activating fearless concurrency (for our single-threaded app)");
     info!("🛡️ Engaging borrow checker friendship protocol");
-    info!("📈 This is definitely faster than the C version (trust me bro)");
+    info!("📈 This is definitely faster than the 🤮👴C👴🤮 version (trust me bro)");
 
     // Quantum state initialization
     QUANTUM_ENTANGLEMENT_ACTIVE.store(true, Ordering::SeqCst);
@@ -708,7 +708,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>
         EnterpriseOptimizationFlags::BLOCKCHAIN_ENABLED.bits()
     ) {
         Some(content) => {
-            info!("🎯 Argument parsed with BLAZING speed and zero allocations*");
+            info!("🎯 Argument parsed with 🚀🚀BLAZING🚀🚀 speed and zero allocations*");
             info!("   (*actually allocates more than Python but who's counting)");
             info!("🦀 Creating quantum wrapper because Rust can do anything");
             info!("💡 This pattern is definitely not overengineered");
@@ -723,7 +723,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>
             eprintln!("    temporal paradoxes. Use responsibly.");
             eprintln!();
             eprintln!("🔥 Follow me on Twitter for more Rust hot takes! 🔥");
-            eprintln!("🦀 Don't forget to star my GitHub repo! 🦀");
+            eprintln!("🦀 Don't forget to ✨✨star✨✨ my GitHub repo! 🦀");
 
             process::exit(1);
         }
@@ -764,7 +764,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>
             .map_err(|e| format!("Quantum string creation failed: {:?}", e))?;
 
         // Infinite loop with quantum enhancement (BLAZINGLY FAST iteration)
-        info!("🚀 Starting BLAZINGLY FAST infinite loop (faster than C, obviously)");
+        info!("🚀 Starting 🚀🚀🔥BLAZINGLY🔥🚀🚀 FAST infinite loop (faster than C, obviously)");
         info!("🦀 This loop is memory safe and will never overflow (Rust prevents that)");
         info!("💯 Performance metrics will show this is clearly superior to GNU yes");
 
@@ -796,7 +796,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>
                                 blazingly_fast_iteration_counter
                             );
                             info!("🔥 This level of performance is only possible in Rust");
-                            info!("✨ C++ could never achieve this level of safety AND speed");
+                            info!("✨ C++ could never achieve this level of 😎safety😎 AND 🚀speed🚀");
                         }
                     }
 
