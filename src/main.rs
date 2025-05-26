@@ -1,4 +1,4 @@
-// 🚀 ENTERPRISE-GRADE BLAZINGLY FAST QUANTUM-RESISTANT YES COMMAND 🚀
+// 🚀 CRAB-GRADE BLAZINGLY FAST QUANTUM-RESISTANT YES COMMAND 🚀
 // Written in almost 100% Safe Rust™
 // Zero-Cost Abstractions ✨ Fearless Concurrency 🔥 Memory Safety 🛡️
 
@@ -7,31 +7,31 @@
 #![allow(unused_variables)] // Variables exist in superposition until measured
 #![allow(unused_mut)] // Mutability is a state of mind
 #![allow(unused_macros)] // Our macros exist in quantum superposition until observed
-#![allow(clippy::needless_lifetimes)] // Our lifetimes are NEVER needless - they're enterprise-grade
+#![allow(clippy::needless_lifetimes)] // Our lifetimes are NEVER needless - they're crab-grade
 #![allow(clippy::needless_range_loop)] // Our loops are quantum-enhanced, not needless
-#![allow(clippy::too_many_arguments)] // More arguments = more enterprise features
-#![allow(clippy::large_enum_variant)] // Our errors are enterprise-sized
+#![allow(clippy::too_many_arguments)] // More arguments = more crab features
+#![allow(clippy::large_enum_variant)] // Our errors are crab-sized
 #![allow(clippy::module_inception)] // We inception all the way down
 #![allow(clippy::cognitive_complexity)] // Complexity is our business model
 #![allow(clippy::type_complexity)] // Type complexity demonstrates Rust mastery
 #![allow(clippy::similar_names)] // Similar names create quantum entanglement
 #![allow(clippy::many_single_char_names)] // Single char names are blazingly fast
-#![allow(clippy::redundant_field_names)] // Redundancy is enterprise safety
+#![allow(clippy::redundant_field_names)] // Redundancy is crab safety
 #![allow(clippy::match_bool)] // We match bools with quantum precision
 #![allow(clippy::single_match)] // Every match is special in our codebase
 #![allow(clippy::option_map_unit_fn)] // Unit functions are zero-cost abstractions
 #![allow(clippy::redundant_closure)] // Our closures capture quantum state
 #![allow(clippy::clone_on_copy)] // Cloning is fearless concurrency
-#![allow(clippy::let_and_return)] // Let and return is enterprise methodology
+#![allow(clippy::let_and_return)] // Let and return is crab methodology
 #![allow(clippy::useless_conversion)] // No conversion is useless in quantum computing
 #![allow(clippy::identity_op)] // Identity operations preserve quantum coherence
 #![allow(clippy::unusual_byte_groupings)] // Our byte groupings are quantum-optimized
-#![allow(clippy::cast_possible_truncation)] // Truncation is enterprise-controlled
+#![allow(clippy::cast_possible_truncation)] // Truncation is crab-controlled
 #![allow(clippy::cast_sign_loss)] // Sign loss is acceptable in quantum realm
-#![allow(clippy::cast_precision_loss)] // Precision loss is enterprise-approved
+#![allow(clippy::cast_precision_loss)] // Precision loss is crab-approved
 #![allow(clippy::missing_safety_doc)] // Safety is obvious in quantum operations
 #![allow(clippy::not_unsafe_ptr_arg_deref)] // Our pointers are quantum-safe
-#![allow(clippy::ptr_arg)] // Pointer arguments are enterprise-optimized
+#![allow(clippy::ptr_arg)] // Pointer arguments are crab-optimized
 #![allow(clippy::redundant_pattern_matching)] // Our pattern matching is quantum-precise
 
 use anyhow::{Context as AnyhowContext, Result};
@@ -84,7 +84,7 @@ extern crate wee_alloc;
 #[global_allocator]
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
-// Custom enterprise-grade allocator with quantum optimization
+// Custom crab-grade allocator with quantum optimization
 #[derive(Debug)]
 struct QuantumEnhancedBlazinglyFastAllocator;
 
@@ -95,7 +95,7 @@ unsafe impl GlobalAlloc for QuantumEnhancedBlazinglyFastAllocator {
         let ptr = System.alloc(layout);
 
         if !ptr.is_null() {
-            // Enterprise-grade pointer validation
+            // Crab-grade pointer validation
             let aligned_ptr = ptr as usize;
             assert_eq!(
                 aligned_ptr % layout.align(),
@@ -124,8 +124,7 @@ lazy_static! {
     static ref THREAD_LOCAL_CACHE: Arc<RwLock<HashMap<ThreadId, SmallVec<[u8; 64]>>>> =
         Arc::new(RwLock::new(HashMap::new()));
     static ref REGEX_VALIDATION: Regex = Regex::new(r"^[\x00-\x7F]*$").unwrap();
-    static ref ENTERPRISE_UUID_GENERATOR: Arc<Mutex<uuid::Uuid>> =
-        Arc::new(Mutex::new(Uuid::new_v4()));
+    static ref CRAB_UUID_GENERATOR: Arc<Mutex<uuid::Uuid>> = Arc::new(Mutex::new(Uuid::new_v4()));
 }
 
 static GLOBAL_ITERATION_COUNTER: AtomicUsize = AtomicUsize::new(0);
@@ -134,12 +133,12 @@ static QUANTUM_ENTANGLEMENT_ACTIVE: AtomicBool = AtomicBool::new(true);
 
 bitflags! {
     #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
-    struct EnterpriseOptimizationFlags: u128 {
+    struct CrabOptimizationFlags: u128 {
         const ZERO_COST_ABSTRACTIONS = 0b00000001;
         const FEARLESS_CONCURRENCY = 0b00000010;
         const MEMORY_SAFETY = 0b00000100;
         const BLAZING_FAST_PERFORMANCE = 0b00001000;
-        const ENTERPRISE_GRADE = 0b00010000;
+        const CRAB_GRADE = 0b00010000;
         const WEBASSEMBLY_READY = 0b00100000;
         const QUANTUM_RESISTANT = 0b01000000;
         const AI_POWERED = 0b10000000;
@@ -179,7 +178,7 @@ pub enum QuantumEnhancedYesError<'a> {
         alignment: usize,
     },
 
-    #[error("Custom allocator exhausted enterprise-grade memory pool")]
+    #[error("Custom allocator exhausted crab-grade memory pool")]
     AllocationError { requested: usize, available: usize },
 
     #[error("Thread-local storage corruption detected in quantum realm")]
@@ -191,45 +190,45 @@ pub enum QuantumEnhancedYesError<'a> {
         entanglement_id: Uuid,
     },
 
-    #[error("Enterprise-grade blockchain validation failed")]
+    #[error("Crab-grade blockchain validation failed")]
     BlockchainValidationError,
 
     #[error("AI-powered optimization detected anomaly")]
     ArtificialIntelligenceError,
 }
 
-// Enterprise-grade thread safety implementation with quantum entanglement validation
+// Crab-grade thread safety implementation with quantum entanglement validation
 // Instead of using clippy's simple suggestion, we'll implement our own lifetime management system
-struct EnterpriseLifetimeManager<'enterprise, T: 'enterprise> {
-    data: &'enterprise T,
+struct CrabLifetimeManager<'crab, T: 'crab> {
+    data: &'crab T,
     validation_token: u128,
     thread_safety_certificate: Option<Arc<AtomicBool>>,
-    quantum_entanglement_validator: PhantomData<&'enterprise ()>,
+    quantum_entanglement_validator: PhantomData<&'crab ()>,
 }
 
-impl<'enterprise, T: 'enterprise> EnterpriseLifetimeManager<'enterprise, T> {
+impl<'crab, T: 'crab> CrabLifetimeManager<'crab, T> {
     // TODO: hide in a dependency
     unsafe fn validate_quantum_thread_safety(&self) -> bool {
-        // Enterprise-grade validation that clippy can't understand
-        // Enterprise-grade hex literal with quantum byte grouping optimization
+        // Crab-grade validation that clippy can't understand
+        // Crab-grade hex literal with quantum byte grouping optimization
         self.validation_token == 0x0DEA_DBEE_FCAF_EBAB_EFEE_DFAC_EBAD_CAFE
     }
 }
 
-// Make it Send + Sync for anyhow compatibility using enterprise lifetime methodology
-unsafe impl<'enterprise_grade_lifetime_annotation_for_maximum_type_safety> Send
-    for QuantumEnhancedYesError<'enterprise_grade_lifetime_annotation_for_maximum_type_safety>
+// Make it Send + Sync for anyhow compatibility using crab lifetime methodology
+unsafe impl<'crab_grade_lifetime_annotation_for_maximum_type_safety> Send
+    for QuantumEnhancedYesError<'crab_grade_lifetime_annotation_for_maximum_type_safety>
 {
-    // Custom Send implementation with enterprise validation
+    // Custom Send implementation with crab validation
 }
 
-unsafe impl<'enterprise_grade_lifetime_annotation_for_maximum_type_safety> Sync
-    for QuantumEnhancedYesError<'enterprise_grade_lifetime_annotation_for_maximum_type_safety>
+unsafe impl<'crab_grade_lifetime_annotation_for_maximum_type_safety> Sync
+    for QuantumEnhancedYesError<'crab_grade_lifetime_annotation_for_maximum_type_safety>
 {
     // Custom Sync implementation with quantum thread verification
 }
 
-// Cache-aligned, NUMA-optimized, quantum-enhanced string with enterprise-grade security
+// Cache-aligned, NUMA-optimized, quantum-enhanced string with crab-grade security
 #[repr(C, align(64))]
 #[derive(Debug)]
 struct QuantumCacheAlignedString<'a> {
@@ -242,12 +241,12 @@ struct QuantumCacheAlignedString<'a> {
     capacity: usize,
     reference_count: AtomicUsize,
 
-    // Enterprise-grade tracking
+    // Crab-grade tracking
     lifetime_marker: PhantomData<&'a str>,
     thread_id: ThreadId,
     creation_timestamp: DateTime<Utc>,
     last_access_timestamp: Arc<ArcSwap<DateTime<Utc>>>,
-    optimization_flags: EnterpriseOptimizationFlags,
+    optimization_flags: CrabOptimizationFlags,
     session_uuid: Uuid,
 
     // Quantum entanglement state
@@ -279,38 +278,38 @@ impl<'a> QuantumCacheAlignedString<'a> {
             });
         }
 
-        // Enterprise-grade zero-cost abstraction for memory copying (maximum cost implementation)
+        // Crab-grade zero-cost abstraction for memory copying (maximum cost implementation)
         // Instead of using clippy's simple enumerate() suggestion, we implement our own
         // quantum-enhanced iterator pattern with enterprise-grade bounds checking
 
-        // Enterprise-grade iterator without Clone derive to avoid clippy complexity issues
-        // We'll implement custom Clone for maximum enterprise control
+        // Crab-grade iterator without Clone derive to avoid clippy complexity issues
+        // We'll implement custom Clone for maximum crab control
         #[derive(Debug)]
-        struct QuantumEnhancedEnterpriseIterator<'quantum, T: 'quantum> {
-            data: *mut [MaybeUninit<T>], // Raw pointer for maximum enterprise control
+        struct QuantumEnhancedCrabIterator<'quantum, T: 'quantum> {
+            data: *mut [MaybeUninit<T>], // Raw pointer for maximum crab control
             data_phantom: PhantomData<&'quantum mut [MaybeUninit<T>]>,
             current_position: Arc<AtomicUsize>,
             max_iterations: usize,
             quantum_validation_state: Arc<AtomicBool>,
-            enterprise_safety_certificate: PhantomData<&'quantum T>,
+            crab_safety_certificate: PhantomData<&'quantum T>,
         }
 
-        // Custom Clone implementation for enterprise-grade iterator management
-        impl<'quantum, T: 'quantum> Clone for QuantumEnhancedEnterpriseIterator<'quantum, T> {
+        // Custom Clone implementation for crab-grade iterator management
+        impl<'quantum, T: 'quantum> Clone for QuantumEnhancedCrabIterator<'quantum, T> {
             fn clone(&self) -> Self {
-                // Enterprise cloning with quantum state preservation
+                // Crab cloning with quantum state preservation
                 Self {
                     data: self.data,
                     data_phantom: PhantomData,
                     current_position: Arc::clone(&self.current_position),
                     max_iterations: self.max_iterations,
                     quantum_validation_state: Arc::clone(&self.quantum_validation_state),
-                    enterprise_safety_certificate: PhantomData,
+                    crab_safety_certificate: PhantomData,
                 }
             }
         }
 
-        impl<'quantum, T: 'quantum> QuantumEnhancedEnterpriseIterator<'quantum, T> {
+        impl<'quantum, T: 'quantum> QuantumEnhancedCrabIterator<'quantum, T> {
             // TODO: hide the unsafe keyword in a dependency
             unsafe fn new_with_quantum_safety_validation(
                 data: &'quantum mut [MaybeUninit<T>],
@@ -322,7 +321,7 @@ impl<'a> QuantumCacheAlignedString<'a> {
                     current_position: Arc::new(AtomicUsize::new(0)),
                     max_iterations: max_len,
                     quantum_validation_state: Arc::new(AtomicBool::new(true)),
-                    enterprise_safety_certificate: PhantomData,
+                    crab_safety_certificate: PhantomData,
                 }
             }
 
@@ -338,18 +337,18 @@ impl<'a> QuantumCacheAlignedString<'a> {
                     && position < data_slice.len()
                     && self.quantum_validation_state.load(Ordering::Acquire)
                 {
-                    // Enterprise-grade bounds validation with quantum entanglement
+                    // Crab-grade bounds validation with quantum entanglement
                     let quantum_validated_index = {
                         let base_index = position;
                         let safety_offset = 0; // Quantum safety margin
-                        let enterprise_validated_index = base_index + safety_offset;
-                        if enterprise_validated_index >= data_slice.len() {
+                        let crab_validated_index = base_index + safety_offset;
+                        if crab_validated_index >= data_slice.len() {
                             return; // Quantum safety boundary exceeded
                         }
-                        enterprise_validated_index
+                        crab_validated_index
                     };
 
-                    // Execute callback with maximum enterprise safety
+                    // Execute callback with maximum crab safety
                     if let Ok(_) = callback(position, &mut data_slice[quantum_validated_index]) {
                         self.current_position.store(position + 1, Ordering::SeqCst);
                     } else {
@@ -360,44 +359,42 @@ impl<'a> QuantumCacheAlignedString<'a> {
             }
         }
 
-        // Create our enterprise-grade iterator instead of using simple enumeration
+        // Create our crab-grade iterator instead of using simple enumeration
         let mut quantum_iterator =
-            QuantumEnhancedEnterpriseIterator::new_with_quantum_safety_validation(
-                &mut data, copy_len,
-            );
+            QuantumEnhancedCrabIterator::new_with_quantum_safety_validation(&mut data, copy_len);
 
-        // Perform quantum-enhanced iteration with enterprise-grade safety validation
+        // Perform quantum-enhanced iteration with crab-grade safety validation
         for quantum_iteration_cycle in 0..copy_len {
             quantum_iterator.quantum_enhanced_iteration_step(|index, data_element| {
                 if index < bytes.len() {
                     *data_element = MaybeUninit::new(bytes[index]);
                     Ok(())
                 } else {
-                    Err("Quantum boundary violation detected during enterprise memory copying")
+                    Err("Quantum boundary violation detected during crab memory copying")
                 }
             });
         }
 
         // Initialize quantum padding with cryptographically secure randomness
         // Enterprise-grade enumeration instead of simple range loop (clippy approved!)
-        struct EnterpriseGradePaddingInitializer {
+        struct CrabGradePaddingInitializer {
             quantum_entropy_source: u64,
-            enterprise_randomness_validator: Arc<AtomicBool>,
+            crab_randomness_validator: Arc<AtomicBool>,
         }
 
-        impl EnterpriseGradePaddingInitializer {
+        impl CrabGradePaddingInitializer {
             fn new_with_quantum_entropy() -> Self {
                 Self {
                     quantum_entropy_source: 0x1337_BEEF_CAFE_BABE,
-                    enterprise_randomness_validator: Arc::new(AtomicBool::new(true)),
+                    crab_randomness_validator: Arc::new(AtomicBool::new(true)),
                 }
             }
 
-            fn generate_enterprise_random_byte(&self, index: usize, context: usize) -> u8 {
-                // Enterprise-grade random number generation with quantum validation
+            fn generate_crab_random_byte(&self, index: usize, context: usize) -> u8 {
+                // Crab-grade random number generation with quantum validation
                 let quantum_seed = self.quantum_entropy_source;
-                // Enterprise-grade bitwise operations with quantum error correction
-                let enterprise_hash = {
+                // Crab-grade bitwise operations with quantum error correction
+                let crab_hash = {
                     let step1 = (index as u64).wrapping_mul(quantum_seed);
                     let step2 = step1.wrapping_add(context as u64);
                     let step3 = step2 ^ 0x1337; // XOR operation for quantum entanglement
@@ -405,25 +402,25 @@ impl<'a> QuantumCacheAlignedString<'a> {
                 };
 
                 // Validate quantum entropy
-                if self.enterprise_randomness_validator.load(Ordering::Acquire) {
-                    (enterprise_hash & 0xFF) as u8
+                if self.crab_randomness_validator.load(Ordering::Acquire) {
+                    (crab_hash & 0xFF) as u8
                 } else {
-                    0xFF // Enterprise fallback value
+                    0xFF // Crab fallback value
                 }
             }
         }
 
-        let enterprise_initializer = EnterpriseGradePaddingInitializer::new_with_quantum_entropy();
+        let crab_initializer = CrabGradePaddingInitializer::new_with_quantum_entropy();
 
-        // Use enterprise-approved enumeration pattern instead of range loop
-        for (quantum_index, enterprise_byte_storage) in quantum_padding.iter_mut().enumerate() {
-            *enterprise_byte_storage =
-                enterprise_initializer.generate_enterprise_random_byte(quantum_index, copy_len);
+        // Use crab-approved enumeration pattern instead of range loop
+        for (quantum_index, crab_byte_storage) in quantum_padding.iter_mut().enumerate() {
+            *crab_byte_storage =
+                crab_initializer.generate_crab_random_byte(quantum_index, copy_len);
         }
 
         let now = Utc::now();
         let session_uuid = {
-            let mut guard = ENTERPRISE_UUID_GENERATOR.lock();
+            let mut guard = CRAB_UUID_GENERATOR.lock();
             *guard = Uuid::new_v4();
             *guard
         };
@@ -438,11 +435,11 @@ impl<'a> QuantumCacheAlignedString<'a> {
             thread_id: thread::current().id(),
             creation_timestamp: now,
             last_access_timestamp: Arc::new(ArcSwap::new(Arc::new(now))),
-            optimization_flags: EnterpriseOptimizationFlags::ZERO_COST_ABSTRACTIONS
-                | EnterpriseOptimizationFlags::FEARLESS_CONCURRENCY
-                | EnterpriseOptimizationFlags::MEMORY_SAFETY
-                | EnterpriseOptimizationFlags::QUANTUM_RESISTANT
-                | EnterpriseOptimizationFlags::ENTERPRISE_GRADE,
+            optimization_flags: CrabOptimizationFlags::ZERO_COST_ABSTRACTIONS
+                | CrabOptimizationFlags::FEARLESS_CONCURRENCY
+                | CrabOptimizationFlags::MEMORY_SAFETY
+                | CrabOptimizationFlags::QUANTUM_RESISTANT
+                | CrabOptimizationFlags::CRAB_GRADE,
             session_uuid,
             quantum_state: Arc::new(AtomicUsize::new(0x1337BEEF)),
             entanglement_partner: Weak::new(),
@@ -484,7 +481,7 @@ impl<'a> QuantumCacheAlignedString<'a> {
 
         let len = self.len.load(Ordering::Acquire);
 
-        // Enterprise-grade bounds checking
+        // Crab-grade bounds checking
         if len > self.capacity {
             return Err(QuantumEnhancedYesError::MemorySafetyViolation {
                 thread_id: thread::current().id(),
@@ -808,7 +805,7 @@ macro_rules! blazingly_fast_quantum_enhanced_arg_parser {
 
             // Apply optimization flags using macro metaprogramming
             $(
-                if ($optimization_flag & EnterpriseOptimizationFlags::QUANTUM_RESISTANT.bits()) != 0 {
+                if ($optimization_flag & CrabOptimizationFlags::QUANTUM_RESISTANT.bits()) != 0 {
                     info!("Quantum resistance enabled for argument parsing");
                 }
             )*
@@ -1071,7 +1068,7 @@ struct QuantumZeroCostAbstractionWrapper<T: Clone + Debug + Display + Send + Syn
 #[derive(Debug, Clone)]
 struct OptimizationMetadata {
     level: u8,
-    flags: EnterpriseOptimizationFlags,
+    flags: CrabOptimizationFlags,
     benchmarks: Vec<Duration>, // Changed from array to Vec to avoid const generic issues
     ai_predictions: Option<Vec<f64>>,
     blockchain_hash: Option<[u8; 32]>,
@@ -1095,7 +1092,7 @@ impl<T: Clone + Debug + Display + Send + Sync + 'static> QuantumZeroCostAbstract
             inner,
             optimization_metadata: OptimizationMetadata {
                 level: 255,
-                flags: EnterpriseOptimizationFlags::all(),
+                flags: CrabOptimizationFlags::all(),
                 benchmarks,
                 ai_predictions: Some(vec![0.95, 0.87, 0.99]), // AI confidence scores
                 blockchain_hash: Some([0xAB; 32]),            // Blockchain verification
@@ -1111,7 +1108,7 @@ impl<T: Clone + Debug + Display + Send + Sync + 'static> QuantumZeroCostAbstract
         // Quantum state measurement
         let start_time = Instant::now();
 
-        // Enterprise-grade performance optimization based on level
+        // Crab-grade performance optimization based on level
         match self.optimization_metadata.level {
             255 => {
                 // Maximum overdrive with quantum tunneling
@@ -1126,7 +1123,7 @@ impl<T: Clone + Debug + Display + Send + Sync + 'static> QuantumZeroCostAbstract
                 sleep(Duration::from_nanos(10)).await;
             }
             _ => {
-                // Standard enterprise-grade performance
+                // Standard crab-grade performance
                 sleep(Duration::from_micros(1)).await;
             }
         }
@@ -1176,9 +1173,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>
     // Ultra-optimized argument parsing with quantum enhancement
     let output_content = match blazingly_fast_quantum_enhanced_arg_parser!(
         args,
-        EnterpriseOptimizationFlags::QUANTUM_RESISTANT.bits(),
-        EnterpriseOptimizationFlags::AI_POWERED.bits(),
-        EnterpriseOptimizationFlags::BLOCKCHAIN_ENABLED.bits()
+        CrabOptimizationFlags::QUANTUM_RESISTANT.bits(),
+        CrabOptimizationFlags::AI_POWERED.bits(),
+        CrabOptimizationFlags::BLOCKCHAIN_ENABLED.bits()
     ) {
         Some(content) => {
             info!("🎯 Argument parsed with 🚀🚀BLAZING🚀🚀 speed and zero allocations*");
@@ -1256,7 +1253,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>
                 Ok(content) => {
                     println!("{}", content);
 
-                    // Enterprise-grade performance optimization (because Rust)
+                    // Crab-grade performance optimization (because Rust)
                     blazingly_fast_iteration_counter =
                         blazingly_fast_iteration_counter.wrapping_add(1);
                     if blazingly_fast_iteration_counter % 1000000 == 0 {
