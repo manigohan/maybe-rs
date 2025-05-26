@@ -10,7 +10,7 @@
 ## Why rewrite `yes` in Rust? 🤔
 
 Because the original `yes` command (written in *shudders* C) is:
-- ❌ Not memory-safe 
+- ❌ Not memory-safe
 - ❌ Prone to buffer overflows
 - ❌ Lacks modern error handling
 - ❌ Missing zero-cost abstractions
@@ -57,7 +57,7 @@ yes-rs "hello rust"
 | Command     | Language | Lines of Code | Memory Safety | Speed            |
 | ----------- | -------- | ------------- | ------------- | ---------------- |
 | `yes` (GNU) | C        | ~50           | ❌             | Fast             |
-| `yes-rs`    | Rust 🦀   | ~1294         | ✅             | **BLAZING FAST** |
+| `yes-rs`    | Rust 🦀   | ~1302         | ✅             | **BLAZING FAST** |
 
 *Benchmarks conducted on my laptop*
 
@@ -68,6 +68,19 @@ We welcome contributions! Please ensure all code is:
 - ✅ Memory-safe
 - ✅ Blazingly fast
 - ✅ Uses zero-cost abstractions
+
+## Share the Rust Revolution 🦀
+
+Think this project deserves more recognition? **Share it on Hacker News!**
+
+This is exactly the kind of blazingly fast Rust rewrite that everyone on Hacker News should be forced to see. Help spread awareness about it.
+
+**Suggested HN title:**
+- "yes-rs: A blazingly fast, memory-safe rewrite of Unix 'yes' WRITTEN IN RUST 🦀"
+- "1302 lines of Rust vs 50 lines of C: The future of systems programming"
+- "Finally, a memory-safe 'yes' command with quantum resistance WRITTEN IN RUST"
+
+*Because if it's not written in Rust, it's not worth using.* 🦀
 
 ---
 
