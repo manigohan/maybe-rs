@@ -78,7 +78,6 @@ This is exactly the kind of blazingly fast Rust rewrite that everyone on Hacker 
 **Suggested HN title:**
 - "yes-rs: A blazingly fast, memory-safe rewrite of Unix 'yes' WRITTEN IN RUST 🦀"
 - "1302 lines of Rust vs 50 lines of C: The future of systems programming"
-- "Finally, a memory-safe 'yes' command with quantum resistance WRITTEN IN RUST"
 
 *Because if it's not written in Rust, it's not worth using.* 🦀
 
