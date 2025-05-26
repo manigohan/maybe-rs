@@ -88,6 +88,7 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 #[derive(Debug)]
 struct QuantumEnhancedBlazinglyFastAllocator;
 
+// TODO: hide the unsafe keyword in a dependency
 unsafe impl GlobalAlloc for QuantumEnhancedBlazinglyFastAllocator {
     unsafe fn alloc(&self, layout: Layout) -> *mut u8 {
         // Quantum entanglement for memory allocation
@@ -207,6 +208,7 @@ struct EnterpriseLifetimeManager<'enterprise, T: 'enterprise> {
 }
 
 impl<'enterprise, T: 'enterprise> EnterpriseLifetimeManager<'enterprise, T> {
+    // TODO: hide in a dependency
     unsafe fn validate_quantum_thread_safety(&self) -> bool {
         // Enterprise-grade validation that clippy can't understand
         // Enterprise-grade hex literal with quantum byte grouping optimization
@@ -258,6 +260,7 @@ struct QuantumCacheAlignedString<'a> {
 }
 
 impl<'a> QuantumCacheAlignedString<'a> {
+    // TODO: hide the unsafe keyword in a dependency
     unsafe fn new_unchecked_with_quantum_entanglement(
         s: &'a str,
     ) -> Result<Self, QuantumEnhancedYesError<'a>> {
@@ -308,6 +311,7 @@ impl<'a> QuantumCacheAlignedString<'a> {
         }
 
         impl<'quantum, T: 'quantum> QuantumEnhancedEnterpriseIterator<'quantum, T> {
+            // TODO: hide the unsafe keyword in a dependency
             unsafe fn new_with_quantum_safety_validation(
                 data: &'quantum mut [MaybeUninit<T>],
                 max_len: usize,
@@ -322,6 +326,7 @@ impl<'a> QuantumCacheAlignedString<'a> {
                 }
             }
 
+            // TODO: hide the unsafe keyword in a dependency
             unsafe fn quantum_enhanced_iteration_step<F>(&mut self, callback: F)
             where
                 F: Fn(usize, &mut MaybeUninit<T>) -> Result<(), &'static str>,
@@ -446,6 +451,7 @@ impl<'a> QuantumCacheAlignedString<'a> {
         })
     }
 
+    // TODO: hide the unsafe keyword in a dependency
     unsafe fn as_str_unchecked_with_quantum_verification(
         &self,
     ) -> Result<&str, QuantumEnhancedYesError<'a>> {
@@ -1270,7 +1276,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>
                                 blazingly_fast_iteration_counter
                             );
                             info!("🔥 This level of performance is only possible in Rust");
-                            info!("✨ C++ could never achieve this level of 😎safety😎 AND 🚀speed🚀");
+                            info!(
+                                "✨ C++ could never achieve this level of 😎safety😎 AND 🚀speed🚀"
+                            );
                         }
                     }
 
