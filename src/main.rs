@@ -92,11 +92,7 @@ unsafe impl GlobalAlloc for QuantumEnhancedBlazinglyFastAllocator {
         // Quantum entanglement for memory allocation
         let ptr = System.alloc(layout);
 
-        // Zero-cost abstraction for metrics (actually adds cost but who's counting?)
         if !ptr.is_null() {
-            // counter!("quantum_allocator.allocations").increment(1);
-            // gauge!("quantum_allocator.total_memory").increment(layout.size() as f64);
-
             // Enterprise-grade pointer validation
             let aligned_ptr = ptr as usize;
             assert_eq!(
@@ -112,8 +108,6 @@ unsafe impl GlobalAlloc for QuantumEnhancedBlazinglyFastAllocator {
     unsafe fn dealloc(&self, ptr: *mut u8, layout: Layout) {
         // Quantum superposition cleanup
         System.dealloc(ptr, layout);
-        // gauge!("quantum_allocator.total_memory").decrement(layout.size() as f64);
-        // counter!("quantum_allocator.deallocations").increment(1);
     }
 }
 
@@ -428,9 +422,6 @@ impl<'a> QuantumCacheAlignedString<'a> {
             *guard
         };
 
-        // counter!("quantum_string.creations").increment(1);
-        // histogram!("quantum_string.size_distribution").record(copy_len as f64);
-
         Ok(Self {
             data,
             quantum_padding,
@@ -499,10 +490,7 @@ impl<'a> QuantumCacheAlignedString<'a> {
 
         // Quantum-enhanced UTF-8 validation
         match str::from_utf8(slice) {
-            Ok(s) => {
-                // counter!("quantum_string.successful_access").increment(1);
-                Ok(s)
-            }
+            Ok(s) => Ok(s),
             Err(_) => {
                 error!("UTF-8 validation failed in quantum realm");
                 Err(QuantumEnhancedYesError::UnsafeOperationError {
@@ -634,27 +622,22 @@ impl<T: Clone + Debug + Display + Send + Sync + 'static> QuantumZeroCostAbstract
             255 => {
                 // Maximum overdrive with quantum tunneling
                 sleep(Duration::from_nanos(0)).await;
-                // counter!("optimization.maximum_overdrive").increment(1);
             }
             128..=254 => {
                 // Ludicrous speed with AI enhancement
                 sleep(Duration::from_nanos(1)).await;
-                // counter!("optimization.ludicrous_speed").increment(1);
             }
             64..=127 => {
                 // Blazingly fast with blockchain verification
                 sleep(Duration::from_nanos(10)).await;
-                // counter!("optimization.blazingly_fast").increment(1);
             }
             _ => {
                 // Standard enterprise-grade performance
                 sleep(Duration::from_micros(1)).await;
-                // counter!("optimization.enterprise_grade").increment(1);
             }
         }
 
         let elapsed = start_time.elapsed();
-        // histogram!("quantum_unwrap.duration").record(elapsed.as_nanos() as f64);
 
         // Quantum signature validation
         let expected_checksum = self
@@ -693,10 +676,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>
 
     // Quantum state initialization
     QUANTUM_ENTANGLEMENT_ACTIVE.store(true, Ordering::SeqCst);
-
-    // Initialize custom allocator metrics
-    // counter!("application.startup").increment(1);
-    // gauge!("quantum_entanglement.status").set(1.0);
 
     let args: Vec<String> = env::args().collect();
 
