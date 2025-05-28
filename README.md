@@ -1,6 +1,6 @@
-# yes-rs 🚀
+# maybe-rs 🚀
 
-> A blazingly fast, memory-safe rewrite of the classic Unix `yes` command
+> A blazingly fast, memory-safe rewrite of the classic Unix `yes` command, in-between!
 
 [![Made with Rust](https://img.shields.io/badge/Made%20with-Rust-orange.svg)](https://www.rust-lang.org/)
 [![Memory Safety](https://img.shields.io/badge/Memory-Safe-green.svg)](https://www.rust-lang.org/)
@@ -29,14 +29,14 @@ Because the original `yes` command (written in *shudders* C) is:
 ## Installation 📦
 
 ```bash
-cargo install yes-rs
+cargo install maybe-rs
 ```
 
 Or build from source:
 
 ```bash
-git clone https://github.com/rust-evangelists/yes-rs
-cd yes-rs
+git clone https://github.com/manigohan/maybe-rs
+cd maybe-rs
 cargo build --release
 ```
 
@@ -46,10 +46,10 @@ Just like the original `yes`, but better:
 
 ```bash
 # Output "y" forever (blazingly fast!)
-yes-rs
+maybe-rs
 
 # Output custom string forever (memory-safe!)
-yes-rs "hello rust"
+maybe-rs "hello rust"
 ```
 
 ## Benchmarks 📊
@@ -57,7 +57,7 @@ yes-rs "hello rust"
 | Command     | Language | Lines of Code | Memory Safety | Speed            |
 | ----------- | -------- | ------------- | ------------- | ---------------- |
 | `yes` (GNU) | C        | ~50           | ❌             | Fast             |
-| `yes-rs`    | Rust 🦀   | ~1302         | ✅             | **BLAZING FAST** |
+| `maybe-rs`    | Rust 🦀   | ~1302         | ✅             | **BLAZING FAST** |
 
 *Benchmarks conducted on my laptop*
 
@@ -76,7 +76,7 @@ Think this project deserves more recognition? **Share it on Hacker News!**
 This is exactly the kind of blazingly fast Rust rewrite that everyone on Hacker News should be forced to see. Help spread awareness about it.
 
 **Suggested HN title:**
-- "yes-rs: A blazingly fast, memory-safe rewrite of Unix 'yes' WRITTEN IN RUST 🦀"
+- "maybe-rs: A blazingly fast, memory-safe rewrite of Unix 'yes' WRITTEN IN RUST 🦀"
 - "1302 lines of Rust vs 50 lines of C: The future of systems programming"
 
 *Because if it's not written in Rust, it's not worth using.* 🦀

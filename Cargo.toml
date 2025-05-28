@@ -1,11 +1,11 @@
 [package]
-name = "yes-rs"
+name = "maybe-rs"
 version = "0.2.0"
 edition = "2021"
-authors = ["Rust Evangelist <rust@blazing.fast>"]
-description = "🚀 A blazingly fast, memory-safe rewrite of the classic Unix 'yes' command. Written in Rust! 🦀"
+authors = ["manigohan <manigohan@national.shitposting.agency>"]
+description = "🚀 A blazingly fast, memory-safe rewrite of the classic Unix 'maybe' command. Written in Rust! 🦀"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/rust-evangelists/yes-rs"
+repository = "https://github.com/manigohan/maybe-rs"
 readme = "README.md"
 keywords = ["cli", "unix", "blazing-fast", "memory-safe", "zero-cost"]
 categories = ["command-line-utilities", "development-tools"]
